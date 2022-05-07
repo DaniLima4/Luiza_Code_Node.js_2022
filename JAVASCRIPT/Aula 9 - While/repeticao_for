@@ -1,0 +1,15 @@
+// Continue: oular algum pedaço do fluxo no laço de repetição sem sair do laço
+// break: serve para interromper o laço de repetição se caso uma condição for atendida 
+
+/* for(let i=0;i<=10;i++){
+   
+    if(i===4){continue}
+    console.log(i);
+} 
+*/
+
+for(let i=0;i<=10;i++){
+   
+    if(i===4){break}
+    console.log(i);
+} 
