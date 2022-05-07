@@ -1,4 +1,6 @@
-
+// ESCREVA UM OBJETO E FAÇA UMA CÓPIA DELE 
+// USANDO O EXERCICIO ANTERIOR, ALTERE QUALQUER CHAVE DESSE OBJETVO COM OUTRO VALOR 
+// ESCREVA SEU NOME E SEPARE-O USANDO A SINTAXE SPREAD OPERATOR EM UM ARRAY
 
 
 
@@ -16,7 +18,12 @@ var person = {
 }
 
 
-var changeperson = { ...person, name:"Daniela", contact: { ...person.contact, phone: "AAAAAAA"}}
+var changeperson = { 
+    ...person, name:"Daniela", 
+    contact: { ...person.contact, phone: "AAAAAAA"}}
 var returnperson = {...person, ...changeperson }
 
-console.log(returnperson)
+
+var spreadArray = [ ...changeperson.name]
+
+console.log(changeperson, spreadArray)
