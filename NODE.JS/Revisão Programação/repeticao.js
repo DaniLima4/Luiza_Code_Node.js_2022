@@ -1,6 +1,6 @@
 // Estrutura de Repetição 
 
-// for Each
+// forEach
 
 // var carrinhoCompras = [
 //         {id: 1, nome: 'bicicleta', valor:100 },
@@ -22,6 +22,11 @@
 //     console.log ('a = ', a)
 //     a++ 
 // }
+
+
+
+// CONDICIONAIS 
+
 
 //If 
 

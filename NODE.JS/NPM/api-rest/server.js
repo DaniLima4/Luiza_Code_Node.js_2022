@@ -2,13 +2,25 @@ import express from 'express'
 
 import bodyParser from 'body-parser'
 
+import routes from './src/routes'
+
+// import urlencoded from 'body-parser/lib/types/urlencoded'
+
 const app = express()
+
+// const json = bodyParser.json()
 
 app.use(bodyParser.json())
 
-app.get('/', (req, res, next) => res.send('Ola luiza code'))
+// const urlencoded = bodyParser.urlencoded({extended:false})
 
-app.get('/teste', (req, res, next) => res.send('Ola teste'))
+
+// const myLogger = (req, res, next) => {
+//     console.log('Executando o log.')
+//     next()
+// }
+
+app.use('/', routes)
 
 app.listen(3000, () => {
     console.log('Executando na porta 3000')
