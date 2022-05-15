@@ -33,5 +33,5 @@ class ProdutoController {
 
 }
 
-
 export default ProdutoController
+
