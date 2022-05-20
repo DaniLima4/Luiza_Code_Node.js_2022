@@ -5,6 +5,21 @@ const router = express.Router()
 import ProdutoController from './produtos-controller'
 const produtoController = new ProdutoController()
 
+// 
+
+/**
+ * @openapi
+ * /:
+ *   get:
+ *      description: Buscar produtos cadastrados
+ *      responses:
+ *       '200':
+ *         description: ok
+ *         
+*/
+
+
+// buscar todos os produtos da base 
 router.get('/', (req, res, next) => {
     produtoController.listarProduto()
     .then(produtos => res.status(200).send(produtos))
