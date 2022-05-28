@@ -1,0 +1,9 @@
+// Há algum problema ao executarmos e testarmos este script? Considere que temos instalado o módulo express.
+
+const app = require('express')()
+app.get('/exercicio06/:x', (rq,rs) => {
+ if (rq.params['x'] == 1) 
+ return rs.json({x: 1})
+ rq.json(rq.params)
+})
+app.listen(3000)

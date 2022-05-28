@@ -1,0 +1,1 @@
+//  Crie um programa orientado objetos no qual extrai uma determinada coleção do MongoDB e a salva em um arquivo JSON com o mesmo nome da coleção.

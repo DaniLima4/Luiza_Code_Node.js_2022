@@ -30,7 +30,6 @@ class ProdutoController {
         return produtoService.removerProduto(idProduto)
     }
 
-
 }
 
 export default ProdutoController
